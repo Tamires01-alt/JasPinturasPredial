@@ -1,47 +1,97 @@
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+import { Card, CardContent } from "@/components/ui/card";
 
-export default function HomeSection() {
+export default function ServicosSection() {
+  const styles = {
+    tituloServicos: {
+      fontSize: '2.25rem',
+      fontWeight: 'bold',
+      color: 'white',
+      '@media(min-width: 768px)': {
+        fontSize: '3rem'
+      }
+    },
+    subtitulo: {
+      fontSize: '1rem',
+      color: '#94a3b8',
+      '@media(min-width: 768px)': {
+        fontSize: '1.25rem'
+      }
+    }
+  };
+  const servicos = [
+    {
+      id: 1,
+      titulo: "Pintura Predial",
+      descricao: "Serviço profissional de pintura para prédios comerciais e residenciais",
+      icone: "/assets/predios.jpg"
+    },
+    {
+      id: 2,
+      titulo: "Reformas",
+      descricao: "Reformas completas com acabamento em pintura",
+      icone: "/assets/predios.jpg"
+    },
+    {
+      id: 3,
+      titulo: "Manutenção Preventiva",
+      descricao: "Serviços de manutenção preventiva e corretiva",
+      icone: "/assets/predios.jpg"
+    }
+   
+  ];
+
   return (
-    <div className="relative w-full h-screen">
+    <section className="relative w-full min-h-screen">
+      {/* Imagem de fundo */}
       <Image
         src="/assets/predios.jpg"
-        alt="Imagem de Fundo"
+        alt="Prédio com pintura profissional"
         layout="fill"
         objectFit="cover"
         quality={100}
+        priority
       />
-      <div className="absolute inset-0 bg-[#f3222b] opacity-90"></div>
-      <div className="absolute left-1/2 top-10 transform -translate-x-1/2 text-white max-w-[90%] sm:max-w-lg text-center flex flex-col items-center justify-start p-4">
-        <h1 className="text-2xl sm:text-4xl font-bold">Bem-vindo ao Nosso Site</h1>
-        <p className="mt-2 sm:mt-4 text-base sm:text-lg">
-          Aqui você encontra as melhores soluções para o seu negócio. Explore agora!
-        </p>
-        <div className=" bg-[#fff] p-3 borde w-50">
-          <Image
-            src="/assets/predios.jpg"
-            alt="Imagem de Fundo"
-            layout="intrinsic"   // Ajusta a imagem de acordo com o tamanho original
-            width={130}          // Largura desejada
-            height={200}         // Altura desejada
-            objectFit="cover"    // A imagem vai cobrir a div mantendo a proporção
-          />
-          <div className="text-black">jhjjkhkj</div>
-          <div className="text-black">Lorem Ipsum é simplesmente um texto modelo da indústria tipográfica e de impressão.  texto modelo da indústria tipográfica e de impressão </div>
+      
+      {/* Overlay escuro */}
+      <div className="absolute inset-0 bg-[#ac141e] opacity-90" />
+
+      {/* Conteúdo principal */}
+      <div className="container mx-auto py-12 relative z-10 cursor-pointer">
+        {/* Título da seção */}
+        <div className="text-center mb-12">
+          <h2 className="titulo-servicos text-white text-4xl font-bold mb-4">
+            Nossos Serviços
+          </h2>
+          <p className="subtitulo text-gray-200 text-lg">
+            Descubra como podemos ajudar sua empresa
+          </p>
         </div>
 
+        {/* Grid de cartões de serviço */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto ">
+          {servicos.map((servico) => (
+            <Card 
+              key={servico.id}
+              className="bg-[#fff] backdrop-blur-sm border-none transition-all duration-300"
+            >
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center space-y-4">
+                  <Image
+                    src={servico.icone}
+                    alt={servico.titulo}
+                    width={164}
+                    height={164}
+                    objectFit="contain"
+                  />
+                  <h3 className="text-xl font-semibold text-black">{servico.titulo}</h3>
+                  <p className="text-black text-center">{servico.descricao}</p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
-
-      <div className="absolute left-1/2 top-10 transform -translate-x-1/2 w-full px-4">
-        {/* Outros conteúdos, se necessário */}
-      </div>
-    </div>
+    </section>
   );
 }

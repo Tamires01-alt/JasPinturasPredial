@@ -1,14 +1,28 @@
 'use client';
 
-
 export default function Contact() {
   return (
-    <div className="bg-[#fff] h-50 flex  flex-col items-center p-8">
-      <div className=" flex flex-col w-full md:w-[800px]  text-center gap-3  ">
-        <p className="text-[#1F4569]  text-2xl font-bold  " >What is Lorem Ipsum?</p>
-        <p className="text-[#EE252C] font-semibold">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'</p>
-        <div className="text-xs">standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</div>
-        <div className="flex justify-center items-center bg-[#EE252C] h-8 p-2 rounded-lg w-fit mx-auto text-white font-medium  cursor-pointer"> Contato: 11 985833004</div>
+    <div className="bg-white py-12 flex flex-col items-center px-6">
+      <div className="w-full max-w-3xl text-center space-y-4">
+        <h2 className="text-[#04426f] text-3xl md:text-4xl font-bold">
+          Por que escolher nossos serviços?
+        </h2>
+      
+        <p className="text-[#ac141e] text-lg md:text-xl font-semibold">
+          Experiência e qualidade no setor de pintura predial. Oferecemos serviços profissionais com segurança e acabamento impecável.
+        </p> 
+        <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+          Com anos de experiência, garantimos resultados excepcionais, combinando tecnologia, materiais de alta qualidade e uma equipe altamente qualificada. 
+          Nosso compromisso é transformar e valorizar seu imóvel com máxima eficiência.
+        </p>
+
+       
+        <a
+          href="tel:11998533004"
+          className="bg-[#ac141e] text-white font-medium text-lg md:text-xl px-6 py-3 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:bg-[#900f17] inline-block"
+        >
+          📞 Contato: (11) 98583-3004
+        </a>
       </div>
     </div>
   );
