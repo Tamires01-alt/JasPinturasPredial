@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function HomeSection() {
   return (
     <div className="relative w-full h-screen">
-      {/* Imagem de Fundo */}
       <Image
         src="/assets/predios.jpg"
         alt="Imagem de prédios"
@@ -11,9 +10,7 @@ export default function HomeSection() {
         objectFit="cover"
         quality={100}
       />
-      <div className="absolute inset-0 bg-[#04426f] opacity-80"></div>
-
-    
+      <div className="absolute inset-0 bg-[#04426f] opacity-70"></div>
       <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white max-w-2xl flex flex-col md:flex-row items-center gap-4 md:gap-6 px-6">
       
         <div className="text-center md:text-left">
@@ -34,7 +31,6 @@ export default function HomeSection() {
           height={300}
           className="w-40 h-40 md:w-64 md:h-64 lg:w-80 lg:h-80 hover:scale-110 transition-transform duration-300"
         />
-
       </div>
     </div>
   );

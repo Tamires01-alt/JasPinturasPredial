@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className='bg-[#fff] w-full h-20'>
+      <div className='bg-[#fff] w-full h-20 '>
         <Image
           src="/assets/iconeJas.png"
           alt="Imagem de Fundo"
