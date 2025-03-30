@@ -5,18 +5,20 @@ import Service from './components/service';
 import OptionService from './components/optionService'
 import ApresentationService from './components/apresentationService'
 import Footer from "./components/footer";
+import WhatsAppButton from "./components/whatsAppButton";
 
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <HomeSection />
+      <HomeSection  />
       <Contact />
-      <Service />
+      <Service  />
       <OptionService />
       <ApresentationService />
       <Footer />
+      <WhatsAppButton /> 
     </div>
   );
 }

@@ -2,7 +2,7 @@
 
 export default function Contact() {
   return (
-    <div className="bg-white py-12 flex flex-col items-center px-6">
+    <div className="bg-white py-12 flex flex-col items-center px-6" id="sobre">
       <div className="w-full max-w-3xl text-center space-y-4">
         <h2 className="text-[#04426f] text-3xl md:text-4xl font-bold">
           Por que escolher nossos serviços?

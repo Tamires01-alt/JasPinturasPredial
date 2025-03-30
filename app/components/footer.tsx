@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Phone, MapPin, Mail } from 'lucide-react';
 
 export default function Footer() {
   const icons = [
@@ -8,7 +9,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className="relative w-full h-64">
+    <div className="relative w-full h-96 md:h-64" id="contato">
       <Image
         src="/assets/predios.jpg"
         alt="Imagem de prédios"
@@ -17,8 +18,8 @@ export default function Footer() {
         quality={100}
       />
       <div className="absolute inset-0 bg-[#04426f] opacity-83"></div>
-      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white max-w-2xl flex flex-col md:flex-row items-start gap-4 md:gap-6 px-6">
-        <div className="w-60">
+      <div className="absolute left-4 md:left-20 top-1/2 transform -translate-y-1/2 text-white max-w-full md:max-w-2xl flex flex-col md:flex-row justify-center md:justify-start left-20 md:items-start gap-4 md:gap-6 px-4 md:px-6">
+        <div className="w-full md:w-60 flex flex-col gap">
           <Image
             src="/assets/iconeJas.png"
             alt="Imagem de Fundo"
@@ -29,11 +30,11 @@ export default function Footer() {
           <p className="text-sm">
             Somos especializados na restauração de edifícios, oferecendo soluções completas.
           </p>
-          <div className="flex flex-row gap-2"> {/* Altere para flex-row e gap-2 para espaçamento horizontal */}
+          <div className="flex flex-row gap-2">
             {icons.map((icon, index) => (
               <div
                 key={index}
-                className="relative bg-[#ac141e] h-10 w-10 rounded-full flex items-center justify-center cursor-pointer" 
+                className="relative bg-[#fff] h-10 w-10 rounded-full flex items-center justify-center cursor-pointer mt-5"
               >
                 <Image
                   src={icon.src}
@@ -44,6 +45,21 @@ export default function Footer() {
                 />
               </div>
             ))}
+          </div>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="text-xl text-color-[#fff] font-bold">Contato</div>
+          <div className="flex gap-2">
+            <Phone color="red" size={20} />
+            <div>11 985833004</div>
+          </div>
+          <div className="flex gap-2">
+            <Mail color="red" size={20} />
+            <div>raytdgdhj@gmail.com</div>
+          </div>
+          <div className="flex gap-2">
+            <MapPin color="red" size={20} />
+            <div>rua: jksjskhskj jsdkjshdkjs 123</div>
           </div>
         </div>
       </div>

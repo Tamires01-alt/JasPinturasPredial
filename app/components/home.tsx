@@ -1,8 +1,9 @@
 import Image from "next/image";
 
+
 export default function HomeSection() {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen"  id="home">
       <Image
         src="/assets/predios.jpg"
         alt="Imagem de prédios"

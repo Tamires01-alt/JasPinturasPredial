@@ -3,8 +3,7 @@ import Image from "next/image";
 
 export default function ApresentationService() {
   return (
-    <div className="bg-white py-12 px-6 flex flex-col md:flex-row items-center max-w-4xl mx-auto">
-      {/* Imagem à esquerda (centralizada no mobile) */}
+    <div className="bg-white py-12 px-6 flex flex-col md:flex-row items-center max-w-4xl mx-auto" id="servicos">
       <div className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center md:items-start">
         <Image
           src="/assets/restauracaoImagem1.jpg"
@@ -23,8 +22,6 @@ export default function ApresentationService() {
           className="mx-auto"
         />
       </div>
-
-      {/* Descrição e chamada para ação */}
 
       <div className="w-full md:w-1/2 mt-6 md:mt-0 md:pl-6 text-center md:text-left">
         <h2 className="text-3xl font-bold text-[#04426f]">Serviço de Restauração Predial</h2>

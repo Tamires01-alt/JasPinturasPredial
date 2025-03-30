@@ -13,7 +13,7 @@ export default function OptionService() {
   ];
 
   return (
-    <div className="bg-[#04426f] py-6 flex flex-col items-center px-6">
+    <div className="bg-[#04426f] py-6 flex flex-col items-center px-6" id="servicos">
       <div className="w-full max-w-4xl grid grid-cols-2 md:flex md:justify-around md:items-center gap-4 md:gap-8">
         {services.map(({ icon: Icon, label }, index) => (
           <div key={index} className="flex flex-col items-center text-white gap-5">
