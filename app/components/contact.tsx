@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -9,17 +10,28 @@ export default function Contact() {
         </h2>
         <p className="text-[#ac141e] text-lg md:text-xl font-semibold">
           Experiência e qualidade no setor de pintura predial. Oferecemos serviços profissionais com segurança e acabamento impecável.
-        </p> 
+        </p>
         <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-          Com anos de experiência, garantimos resultados excepcionais, combinando tecnologia, materiais de alta qualidade e uma equipe altamente qualificada. 
+          Com anos de experiência, garantimos resultados excepcionais, combinando tecnologia, materiais de alta qualidade e uma equipe altamente qualificada.
           Nosso compromisso é transformar e valorizar seu imóvel com máxima eficiência.
         </p>
-        <a
-          href="tel:11998533004"
-          className="bg-[#ac141e] text-white font-medium text-lg md:text-xl px-6 py-3 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:bg-[#900f17] inline-block"
-        >
-          📞 Contato: (11) 98583-3004
-        </a>
+        <div className="w-full flex justify-center mt-8">
+          <a
+            href="https://wa.me/5511985092860"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 p-3 bg-green-500 text-white rounded-full"
+          >
+            <Image
+              src="/assets/whatsAppLogo.jpg"
+              alt="WhatsApp Logo"
+              width={30}
+              height={30}
+              className="rounded-full"
+            />
+            <span>Entre em contato via WhatsApp</span>
+          </a>
+        </div>
       </div>
     </div>
   );

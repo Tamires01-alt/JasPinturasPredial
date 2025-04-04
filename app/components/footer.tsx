@@ -17,7 +17,7 @@ export default function Footer() {
         objectFit="cover"
         quality={100}
       />
-      <div className="absolute inset-0 bg-[#04426f] opacity-83"></div>
+      <div className="absolute inset-0 bg-[#143b5e] "></div>
       <div className="absolute left-4 md:left-20 top-1/2 transform -translate-y-1/2 text-white max-w-full md:max-w-2xl flex flex-col md:flex-row justify-center md:justify-start left-20 md:items-start gap-4 md:gap-6 px-4 md:px-6">
         <div className="w-full md:w-60 flex flex-col gap">
           <Image
@@ -51,15 +51,15 @@ export default function Footer() {
           <div className="text-xl text-color-[#fff] font-bold">Contato</div>
           <div className="flex gap-2">
             <Phone color="red" size={20} />
-            <div>11 985833004</div>
+            <div>+55 11 98509-2860</div>
           </div>
           <div className="flex gap-2">
             <Mail color="red" size={20} />
-            <div>raytdgdhj@gmail.com</div>
+            <div>jas.mepinturas@gmail.com</div>
           </div>
           <div className="flex gap-2">
             <MapPin color="red" size={20} />
-            <div>rua: jksjskhskj jsdkjshdkjs 123</div>
+            <div>São Paulo, sp </div>
           </div>
         </div>
       </div>

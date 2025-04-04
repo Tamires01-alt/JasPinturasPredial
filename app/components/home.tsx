@@ -22,7 +22,7 @@ export default function HomeSection() {
             Somos especialistas em pintura predial, trazendo segurança, eficiência e acabamento impecável para cada projeto.
           </p>
           <p className="mt-2 text-base md:text-lg">
-            Entre em contato e solicite um orçamento gratuito!
+            Entre em contato e solicite um orçamento sem compromisso!
           </p>
         </div>
         <Image
@@ -30,7 +30,14 @@ export default function HomeSection() {
           alt="Pintor profissional"
           width={300}
           height={300}
-          className="w-40 h-40 md:w-64 md:h-64 lg:w-80 lg:h-80 hover:scale-110 transition-transform duration-300"
+           className="hidden md:block w-40 h-40 md:w-64 md:h-64 lg:w-80 lg:h-80 hover:scale-110 transition-transform duration-300"
+        />
+        <Image
+          src="/assets/personagem4.png"
+          alt="Pintor profissional"
+          width={300}
+          height={300}
+           className="block md:hidden w-90 h-40 md:w-90 md:h-64 lg:w-80 lg:h-80 hover:scale-110 transition-transform duration-300"
         />
       </div>
     </div>

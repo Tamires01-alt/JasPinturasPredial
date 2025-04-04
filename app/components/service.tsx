@@ -7,25 +7,27 @@ export default function ServicosSection() {
       id: 1,
       titulo: "Pintura Predial",
       descricao: "Serviço profissional de pintura para prédios comerciais e residenciais",
-      icone: "/assets/predios.jpg"
+      icone: "/assets/service3.jpeg"
     },
     {
       id: 2,
       titulo: "Reformas",
       descricao: "Reformas completas com acabamento em pintura",
-      icone: "/assets/predios.jpg"
+      icone: "/assets/service7.jpg"
     },
     {
       id: 3,
-      titulo: "Manutenção Preventiva",
-      descricao: "Serviços de manutenção preventiva e corretiva",
-      icone: "/assets/predios.jpg"
+      titulo: "Pintura e acabamento",
+      descricao: "Pintura profissional com acabamento de alta qualidade.",
+     
+      icone: "/assets/service5.jpg"
     },
     {
       id: 4,
       titulo: "Manutenção Preventiva",
       descricao: "Serviços de manutenção preventiva e corretiva",
-      icone: "/assets/predios.jpg"
+      icone: "/assets/service6.jpg"
+
     }
   ];
 
@@ -43,10 +45,10 @@ export default function ServicosSection() {
       <div className="container mx-auto py-12 relative z-10 cursor-pointer">
         <div className="text-center mb-12">
           <h2 className="text-white text-4xl font-bold mb-4">
-            Nossos Serviços
+          Especialistas em Pintura Predial
           </h2>
           <p className="text-gray-200 text-lg">
-            Descubra como podemos ajudar sua empresa
+          Serviços de pintura e manutenção com qualidade, segurança e compromisso com o seu patrimônio.
           </p>
         </div>
         <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">

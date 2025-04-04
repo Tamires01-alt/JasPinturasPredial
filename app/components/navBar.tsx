@@ -20,7 +20,7 @@ export default function Navbar() {
       />
     
      
-      <a 
+      {/* <a 
       href="https://wa.me/11985833004" 
       target="_blank" 
       rel="noopener noreferrer"
@@ -34,7 +34,7 @@ export default function Navbar() {
          className="rounded-full hover:scale-110 transition-transform duration-300"
       />
       
-    </a>
+    </a> */}
     </div>
       <nav className="bg-[#04426f] shadow-md  w-full top-10 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

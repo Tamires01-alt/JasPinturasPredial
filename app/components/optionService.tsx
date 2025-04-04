@@ -1,6 +1,6 @@
 'use client';
 
-import { Building2, PaintBucket, Wrench, Hammer, ShieldCheck } from 'lucide-react';
+import { Building2, PaintBucket, Wrench, Hammer, ShieldCheck , BookmarkCheck } from 'lucide-react';
 
 export default function OptionService() {
   const services = [
@@ -9,7 +9,7 @@ export default function OptionService() {
     { icon: Wrench, label: 'Manutenção Hidráulica' },
     { icon: Hammer, label: 'Serviços de Alvenaria' },
     { icon: ShieldCheck, label: 'Segurança e Impermeabilização' },
-    { icon: ShieldCheck, label: 'Segurança e Impermeabilização' }
+    { icon: BookmarkCheck, label: 'Técnicas avançadas' }
   ];
 
   return (
