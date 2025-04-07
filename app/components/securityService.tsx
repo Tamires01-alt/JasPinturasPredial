@@ -12,7 +12,7 @@ export default function SecurityService() {
         quality={100}
         priority
       />
-      <div className="absolute inset-0 bg-[#ac141e] opacity-90" />
+      <div className="absolute inset-0 bg-[#ac141e] opacity-80" />
       <div className="container mx-auto py-12 relative z-10 cursor-pointer">
         <div className=" py-12 flex flex-col items-center px-6" id="servicos">
           <div className="w-full max-w-3xl text-center space-y-4">

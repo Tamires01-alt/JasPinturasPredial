@@ -41,7 +41,7 @@ export default function ServicosSection() {
         quality={100}
         priority
       />
-      <div className="absolute inset-0 bg-[#ac141e] opacity-90" />
+      <div className="absolute inset-0 bg-[#ac141e] opacity-80" />
       <div className="container mx-auto py-12 relative z-10 cursor-pointer">
         <div className="text-center mb-12">
           <h2 className="text-white text-4xl font-bold mb-4">
