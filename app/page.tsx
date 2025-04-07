@@ -7,6 +7,7 @@ import ApresentationService from './components/apresentationService'
 import Footer from "./components/footer";
 import WhatsAppButton from "./components/whatsAppButton";
 import AboutService from "./components/aboutService"
+import SecurityService  from "./components/securityService"
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Service  />
       <OptionService />
       <ApresentationService />
+      <SecurityService />
       <Footer />
       <WhatsAppButton /> 
     </div>
