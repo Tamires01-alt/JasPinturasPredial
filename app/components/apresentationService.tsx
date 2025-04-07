@@ -34,23 +34,35 @@ export default function ApresentationService() {
         <p className="mt-4 text-gray-600">
           Nossa equipe altamente qualificada está pronta para atender suas necessidades. Entre em contato para saber como podemos transformar seu espaço.
         </p>
+        <p className="mt-4 text-gray-600">
+          Nossos principais serviços:
+        </p>
+        <ul className="mt-2 list-disc list-inside text-gray-600">
+          <li>Hidrojateamento</li>
+          <li>Pintura externa e interna</li>
+          <li>Tratamento de trincas</li>
+          <li>Restauração de pastilhas cerâmicas</li>
+          <li>Reparo de texturas</li>
+          <li>Manutenção preventiva e corretiva</li>
+          <li>Impermeabilização de caixa d’água e lajes</li>
+        </ul>
         <div className="w-full flex justify-center mt-8">
-        <a 
-          href="https://wa.me/5511985092860" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 p-3 bg-green-500 text-white rounded-full"
-        >
-          <Image 
-            src="/assets/whatsAppLogo.jpg" 
-            alt="WhatsApp Logo" 
-            width={30} 
-            height={30} 
-            className="rounded-full"
-          />
-          <span>Entre em contato via WhatsApp</span>
-        </a>
-      </div>
+          <a
+            href="https://wa.me/5511985092860"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 p-3 bg-green-500 text-white rounded-full"
+          >
+            <Image
+              src="/assets/whatsAppLogo.jpg"
+              alt="WhatsApp Logo"
+              width={30}
+              height={30}
+              className="rounded-full"
+            />
+            <span>Entre em contato via WhatsApp</span>
+          </a>
+        </div>
 
       </div>
     </div>

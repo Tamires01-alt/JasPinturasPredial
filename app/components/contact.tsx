@@ -8,12 +8,11 @@ export default function Contact() {
         <h2 className="text-[#04426f] text-3xl md:text-4xl font-bold">
           Por que escolher nossos serviços?
         </h2>
-        <p className="text-[#ac141e] text-lg md:text-xl font-semibold">
+        <p className="text-[#000] text-lg md:text-xl font-bold">
           Experiência e qualidade no setor de pintura predial. Oferecemos serviços profissionais com segurança e acabamento impecável.
         </p>
         <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-          Com anos de experiência, garantimos resultados excepcionais, combinando tecnologia, materiais de alta qualidade e uma equipe altamente qualificada.
-          Nosso compromisso é transformar e valorizar seu imóvel com máxima eficiência.
+        Com ampla experiência no setor, oferecemos resultados de excelência, unindo materiais de qualidade e uma equipe técnica altamente capacitada. Nosso compromisso é transformar e valorizar seu imóvel com eficiência, precisao e responsabilidade.
         </p>
         <div className="w-full flex justify-center mt-8">
           <a

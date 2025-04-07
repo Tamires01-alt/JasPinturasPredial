@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="absolute left-4 md:left-20 top-1/2 transform -translate-y-1/2 text-white max-w-full md:max-w-2xl flex flex-col md:flex-row justify-center md:justify-start left-20 md:items-start gap-4 md:gap-6 px-4 md:px-6">
         <div className="w-full md:w-60 flex flex-col gap">
           <Image
-            src="/assets/iconeJas.png"
+            src="/assets/iconeJasFooter.png"
             alt="Imagem de Fundo"
             quality={100}
             width={200}
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-2">
             <MapPin color="red" size={20} />
-            <div>São Paulo, sp </div>
+            <div>São Paulo, SP </div>
           </div>
         </div>
       </div>

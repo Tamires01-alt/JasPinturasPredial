@@ -45,7 +45,7 @@ export default function ServicosSection() {
       <div className="container mx-auto py-12 relative z-10 cursor-pointer">
         <div className="text-center mb-12">
           <h2 className="text-white text-4xl font-bold mb-4">
-          Especialistas em Pintura Predial
+          Especialistas em restauração de fachadas
           </h2>
           <p className="text-gray-200 text-lg">
           Serviços de pintura e manutenção com qualidade, segurança e compromisso com o seu patrimônio.

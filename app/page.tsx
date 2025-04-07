@@ -6,6 +6,7 @@ import OptionService from './components/optionService'
 import ApresentationService from './components/apresentationService'
 import Footer from "./components/footer";
 import WhatsAppButton from "./components/whatsAppButton";
+import AboutService from "./components/aboutService"
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <HomeSection  />
       <Contact />
+      <AboutService />
       <Service  />
       <OptionService />
       <ApresentationService />

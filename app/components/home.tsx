@@ -19,7 +19,7 @@ export default function HomeSection() {
             Transformamos Prédios com Qualidade e Precisão!
           </h1>
           <p className="mt-4 text-base md:text-lg">
-            Somos especialistas em pintura predial, trazendo segurança, eficiência e acabamento impecável para cada projeto.
+            Somos especialistas em restauração de fachadas, trazendo segurança, eficiência e acabamento impecável para cada projeto.
           </p>
           <p className="mt-2 text-base md:text-lg">
             Entre em contato e solicite um orçamento sem compromisso!
