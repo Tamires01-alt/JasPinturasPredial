@@ -1,11 +1,23 @@
 import Image from "next/image";
-import { Phone, MapPin, Mail } from 'lucide-react';
+import { Phone, MapPin, Mail } from "lucide-react";
 
 export default function Footer() {
   const icons = [
-    { src: "/assets/facebook.png", alt: "Facebook" },
-    { src: "/assets/whatsapp.png", alt: "WhatsApp" },
-    { src: "/assets/instagram.png", alt: "Instagram" },
+    {
+      src: "/assets/facebook.png",
+      alt: "Facebook",
+      link: "https://www.facebook.com/jaspinturasprediais",
+    },
+    {
+      src: "/assets/whatsapp.png",
+      alt: "WhatsApp",
+      link: "https://wa.me/5511985092860",
+    },
+    {
+      src: "/assets/instagram.png",
+      alt: "Instagram",
+      link: "https://www.instagram.com/jaspinturapredial?igsh=aW42enlyN2Njdmhh",
+    },
   ];
 
   return (
@@ -17,8 +29,8 @@ export default function Footer() {
         objectFit="cover"
         quality={100}
       />
-      <div className="absolute inset-0 bg-[#143b5e] "></div>
-      <div className="absolute left-4 md:left-20 top-1/2 transform -translate-y-1/2 text-white max-w-full md:max-w-2xl flex flex-col md:flex-row justify-center md:justify-start left-20 md:items-start gap-4 md:gap-6 px-4 md:px-6">
+      <div className="absolute inset-0 bg-[#143b5e]"></div>
+      <div className="absolute left-4 md:left-20 top-1/2 transform -translate-y-1/2 text-white max-w-full md:max-w-2xl flex flex-col md:flex-row justify-center md:justify-start md:items-start gap-4 md:gap-6 px-4 md:px-6">
         <div className="w-full md:w-60 flex flex-col gap">
           <Image
             src="/assets/iconeJasFooter.png"
@@ -32,8 +44,11 @@ export default function Footer() {
           </p>
           <div className="flex flex-row gap-2">
             {icons.map((icon, index) => (
-              <div
+              <a
                 key={index}
+                href={icon.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="relative bg-[#fff] h-10 w-10 rounded-full flex items-center justify-center cursor-pointer mt-5"
               >
                 <Image
@@ -43,7 +58,7 @@ export default function Footer() {
                   height={20}
                   quality={100}
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -59,10 +74,11 @@ export default function Footer() {
           </div>
           <div className="flex gap-2">
             <MapPin color="red" size={20} />
-            <div>São Paulo, SP </div>
+            <div>São Paulo, SP</div>
           </div>
         </div>
       </div>
+     
     </div>
   );
 }

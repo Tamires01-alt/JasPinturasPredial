@@ -13,20 +13,20 @@ export default function ServicosSection() {
       id: 2,
       titulo: "Reformas",
       descricao: "Reformas completas com acabamento em pintura",
-      icone: "/assets/service7.jpg"
+      icone: "/assets/service7.jpeg"
     },
     {
       id: 3,
       titulo: "Pintura e acabamento",
       descricao: "Pintura profissional com acabamento de alta qualidade.",
      
-      icone: "/assets/service5.jpg"
+      icone: "/assets/service5.jpeg"
     },
     {
       id: 4,
       titulo: "Manutenção Preventiva",
       descricao: "Serviços de manutenção preventiva e corretiva",
-      icone: "/assets/service6.jpg"
+      icone: "/assets/service6.jpeg"
 
     }
   ];

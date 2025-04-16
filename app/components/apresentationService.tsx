@@ -41,10 +41,13 @@ export default function ApresentationService() {
           <li>Hidrojateamento</li>
           <li>Pintura externa e interna</li>
           <li>Tratamento de trincas</li>
-          <li>Restauração de pastilhas cerâmicas</li>
+          <li>Restauração de pastilhas e cerâmicas</li>
           <li>Reparo de texturas</li>
           <li>Manutenção preventiva e corretiva</li>
           <li>Impermeabilização de caixa d’água e lajes</li>
+          <li>Instalação de calhas e rufos</li>
+          <li>Limpeza de vidros</li>
+          <li>Reforma de telhado</li>
         </ul>
         <div className="w-full flex justify-center mt-8">
           <a

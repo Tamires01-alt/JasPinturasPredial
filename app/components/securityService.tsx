@@ -14,9 +14,9 @@ export default function SecurityService() {
       />
       <div className="absolute inset-0 bg-[#ac141e] opacity-80" />
       <div className="container mx-auto py-12 relative z-10 cursor-pointer">
-        <div className=" py-12 flex flex-col items-center px-6" id="servicos">
-          <div className="w-full max-w-3xl text-center space-y-4">
-            <div className=" text-left space-y-4">
+        <div className="py-12 flex flex-col items-center px-6" id="servicos">
+          <div className="w-full max-w-3xl text-center space-y-4 flex flex-col md:flex-row items-center md:items-start gap-6">
+            <div className="text-left space-y-4 flex-1">
               <h3 className="text-[#fff] text-2xl md:text-3xl font-bold">SEGURANÇA</h3>
               <p className="text-[#fff] text-sm md:text-base leading-relaxed">
                 Nossos funcionários são treinados conforme <strong>NR-35</strong>.<br />
@@ -35,6 +35,17 @@ export default function SecurityService() {
                 <li>Luvas de Segurança</li>
                 <li>Cabos de Aço e Cabos de Fibra Sintética</li>
               </ul>
+            </div>
+            <div className="flex justify-center md:justify-end flex-1">
+              <Image
+                src="/assets/personagem3.png"
+                alt="Trabalhador com EPIs"
+                objectFit="contain"
+                quality={100}
+                width={200}
+                height={200}
+                priority
+              />
             </div>
           </div>
         </div>

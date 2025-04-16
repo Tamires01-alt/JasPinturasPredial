@@ -9,6 +9,8 @@ import WhatsAppButton from "./components/whatsAppButton";
 import AboutService from "./components/aboutService"
 import SecurityService  from "./components/securityService"
 
+import PresenteNoDigital from './components/PresenteNoDigital';
+
 
 export default function Home() {
   return (
@@ -23,6 +25,7 @@ export default function Home() {
       <SecurityService />
       <Footer />
       <WhatsAppButton /> 
+      <PresenteNoDigital/>
     </div>
   );
 }
