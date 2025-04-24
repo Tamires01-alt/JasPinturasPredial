@@ -32,8 +32,8 @@ import {
 
 export default function Home() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  )
+    Autoplay({ delay: 1000, stopOnInteraction: true }) as any
+  );;
 
   const [currentSlide, setCurrentSlide] = useState(0)
 
