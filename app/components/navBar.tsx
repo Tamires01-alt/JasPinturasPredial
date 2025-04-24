@@ -44,6 +44,7 @@ export default function Navbar() {
               <Link href="#home" className="text-[#fff] ">Home</Link>
               <Link href="#sobre" className="text-[#fff] ">Sobre</Link>
               <Link href="#servicos" className="text-[#fff] ">Serviços</Link>
+              <Link href="#fotos" className="text-[#fff] ">Galeria de fotos</Link>
               <Link href="#contato" className="text-[#fff] ">Contato</Link>
             </div>
             <div className="md:hidden">
@@ -58,6 +59,7 @@ export default function Navbar() {
             <Link href="#home"className="block text-[#04426f] ">Home</Link>
             <Link href="#sobre" className="block text-[#04426f] ">Sobre</Link>
             <Link href="#servicos" className="block text-[#04426f] ">Serviços</Link>
+            <Link href="#fotos" className="block text-[#04426f] ">Galeria de fotos</Link>
             <Link href="#contato" className="block text-[#04426f] ">Contato</Link>
           </div>
         )}

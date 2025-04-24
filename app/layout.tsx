@@ -12,6 +12,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
+export const metadata: Metadata = {
+  title: "Jas Pintura Predial",
+  description: "Jas Pintura Predial",
+  icons: {
+    icon: "/assets/iconeJas.png", 
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
