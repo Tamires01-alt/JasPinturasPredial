@@ -47,14 +47,20 @@ export default function Home() {
   ];
 
   const images = [
+    "/assets/imagemCarrosel13.jpg",
     "/assets/imagemCarrosel.jpeg",
     "/assets/imagemCarrosel1.jpeg",
     "/assets/imagemCarrosel2.jpeg",
     "/assets/imagemCarrosel3.jpeg",
+    "/assets/imagemCarrosel10.jpg",
     "/assets/imagemCarrosel4.jpeg",
     "/assets/imagemCarrosel5.jpeg",
+    "/assets/imagemCarrosel8.jpg",
+    "/assets/imagemCarrosel9.jpg",
     "/assets/imagemCarrossel6.jpeg",
-    "/assets/imagemCarrossel7.jpeg"
+    "/assets/imagemCarrosel12.jpg",
+    "/assets/imagemCarrossel7.jpeg",
+    
   ];
 
   return (
@@ -93,24 +99,24 @@ export default function Home() {
                       <img
                         src={src}
                         alt={`Funcionário trabalhando - Imagem ${index + 1}`}
-                        className="object-cover rounded-2xl w-full h-full transition-transform duration-500 hover:scale-105"
+                        className="object-cover rounded-2xl w-full h-full max-h-96 transition-transform duration-500 hover:scale-105"
                       />
                     </CardContent>
                   </Card>
                 </div>
               </CarouselItem>
             ))}
-          </CarouselContent>
-        </Carousel>
 
-        <div className="flex justify-center mt-4 space-x-2">
-          {images.map((_, idx) => (
-            <div
-              key={idx}
-              className={`w-2 h-2 rounded-full ${currentSlide === idx ? 'bg-white' : 'bg-gray-400'} transition-all duration-300`}
-            />
-          ))}
-        </div>
+          </CarouselContent>
+          <div className="absolute top-1/2 -translate-y-1/2 left-2 z-10 cursor-pointer"> 
+            <CarouselPrevious className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" /> 
+          </div>
+          <div className="absolute top-1/2 -translate-y-1/2 right-2 z-10 cursor-pointer">
+            <CarouselNext className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" /> 
+          </div>
+        
+
+        </Carousel>
 
         <div className="max-w-3xl text-center text-white space-y-4">
           <h3 className="text-2xl font-semibold mt-10">O Resultado Final</h3>
