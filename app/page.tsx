@@ -12,7 +12,7 @@ import AboutService from "./components/aboutService"
 import SecurityService from "./components/securityService"
 import GaleriaFotos from "./components/galeriaFotos"
 import Antes1 from "@/public/assets/antes1.jpg"
-import Depois1 from "@/public/assets/depois1.jpg"
+import Depois1 from "@/public/assets/depois1.jpeg"
 import Antes2 from "@/public/assets/antes2.jpg"
 import Depois2 from "@/public/assets/depois2.jpg"
 import PresenteNoDigital from './components/PresenteNoDigital';
@@ -57,17 +57,24 @@ export default function Home() {
     "/assets/imagemCarrosel5.jpeg",
     "/assets/imagemCarrosel8.jpg",
     "/assets/imagemCarrosel9.jpg",
+    "/assets/imagemCarrosel30.jpeg",
     "/assets/imagemCarrosel20.jpeg",
+    "/assets/imagemCarrosel36.jpeg",
     "/assets/imagemCarrosel21.jpeg",
     "/assets/imagemCarrosel22.jpeg",
     "/assets/imagemCarrosel23.jpeg",
+    "/assets/imagemCarrosel31.jpeg",
     "/assets/imagemCarrosel24.jpeg",
     "/assets/imagemCarrosel25.jpeg",
+    "/assets/imagemCarrosel32.jpeg",
     "/assets/imagemCarrosel26.jpeg",
     "/assets/imagemCarrosel27.jpeg",
     "/assets/imagemCarrosel28.jpeg",
+    "/assets/imagemCarrosel35.jpeg",
     "/assets/imagemCarrossel6.jpeg",
+    "/assets/imagemCarrosel34.jpeg",
     "/assets/imagemCarrosel12.jpg",
+    "/assets/imagemCarrosel33.jpeg",
     "/assets/imagemCarrossel7.jpeg",
 
   ];
