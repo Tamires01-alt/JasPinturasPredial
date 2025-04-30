@@ -20,7 +20,7 @@ export default function ServicosSection() {
       titulo: "Pintura e acabamento",
       descricao: "Pintura profissional com acabamento de alta qualidade.",
      
-      icone: "/assets/service5.jpeg"
+      icone: "/assets/imagemCarrosel13.jpg"
     },
     {
       id: 4,

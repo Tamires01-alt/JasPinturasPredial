@@ -57,10 +57,19 @@ export default function Home() {
     "/assets/imagemCarrosel5.jpeg",
     "/assets/imagemCarrosel8.jpg",
     "/assets/imagemCarrosel9.jpg",
+    "/assets/imagemCarrosel20.jpeg",
+    "/assets/imagemCarrosel21.jpeg",
+    "/assets/imagemCarrosel22.jpeg",
+    "/assets/imagemCarrosel23.jpeg",
+    "/assets/imagemCarrosel24.jpeg",
+    "/assets/imagemCarrosel25.jpeg",
+    "/assets/imagemCarrosel26.jpeg",
+    "/assets/imagemCarrosel27.jpeg",
+    "/assets/imagemCarrosel28.jpeg",
     "/assets/imagemCarrossel6.jpeg",
     "/assets/imagemCarrosel12.jpg",
     "/assets/imagemCarrossel7.jpeg",
-    
+
   ];
 
   return (
@@ -99,7 +108,7 @@ export default function Home() {
                       <img
                         src={src}
                         alt={`Funcionário trabalhando - Imagem ${index + 1}`}
-                        className="object-cover rounded-2xl w-full h-full max-h-96 transition-transform duration-500 hover:scale-105"
+                        className="object-cover rounded-2xl w-full h-full max-h-[600px] transition-transform cursor-pointer duration-500 hover:scale-125"
                       />
                     </CardContent>
                   </Card>
@@ -108,18 +117,16 @@ export default function Home() {
             ))}
 
           </CarouselContent>
-          <div className="absolute top-1/2 -translate-y-1/2 left-2 z-10 cursor-pointer"> 
-            <CarouselPrevious className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" /> 
+          <div className="absolute top-1/2 -translate-y-1/2 left-2 z-10 cursor-pointer">
+            <CarouselPrevious className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" />
           </div>
           <div className="absolute top-1/2 -translate-y-1/2 right-2 z-10 cursor-pointer">
-            <CarouselNext className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" /> 
+            <CarouselNext className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" />
           </div>
-        
-
         </Carousel>
 
-        <div className="max-w-3xl text-center text-white space-y-4">
-          <h3 className="text-2xl font-semibold mt-10">O Resultado Final</h3>
+        <div className="max-w-3xl text-center text-white space-y-4 mt-4 sm:mt-10">
+          <h3 className="text-2xl font-semibold">O Resultado Final</h3>
           <p className="text-lg">
             Depois de dias de trabalho intenso, o que antes era desgaste e abandono, hoje é beleza e segurança restauradas.
           </p>

@@ -39,9 +39,7 @@ export default function Footer() {
             width={200}
             height={200}
           />
-          <p className="text-sm">
-            Somos especializados na restauração de edifícios, oferecendo soluções completas.
-          </p>
+         
           <div className="flex flex-row gap-2">
             {icons.map((icon, index) => (
               <a
